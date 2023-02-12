@@ -28,6 +28,7 @@ if(isset($_POST['submit'])){
     <title>Formulário</title>
 </head>
 <body>
+    <a href="home.php">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>
