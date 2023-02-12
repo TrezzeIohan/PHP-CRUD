@@ -12,11 +12,15 @@
 
     <div class="tela-login">
         <h1>Login</h1>
-        <input type="text" placeholder="Nome">
-        <br><br>
-        <input type="password" placeholder="Senha">
-        <br><br>
-        <button>Enviar</button>
+
+        <form action="POST">
+            <input type="text" name="email" placeholder="Email">
+            <br><br>
+            <input type="password" placeholder="Senha">
+            <br><br>
+            <button>Enviar</button>
+        </form>
+        
     </div>
     
 </body>

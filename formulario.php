@@ -3,6 +3,7 @@ if(isset($_POST['submit'])){
     include_once('config.php');
 
     $nome = $_POST['nome'];
+    $senha = $_POST['senha'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
     $sexo = $_POST['genero'];
@@ -12,8 +13,8 @@ if(isset($_POST['submit'])){
     $endereco = $_POST['endereco'];
 
     $result = mysqli_query($conexao, 
-        "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco)
-        VALUES('$nome','$email','$telefone','$sexo','$data_nasc','$cidade', '$estado','$endereco')");
+        "INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco)
+        VALUES('$nome','$senha','$email','$telefone','$sexo','$data_nasc','$cidade', '$estado','$endereco')");
 }
 ?>
 
@@ -37,6 +38,12 @@ if(isset($_POST['submit'])){
                 <div class="input-box">
                     <input type="text" name="nome" id="nome" class="input-user" required>
                     <label for="nome" class="label-input">Nome Completo</label>
+                </div>
+                <br>
+
+                <div class="input-box">
+                    <input type="password" name="senha" id="senha" class="input-user" required>
+                    <label for="nome" class="label-input">Senha</label>
                 </div>
                 <br>
 
