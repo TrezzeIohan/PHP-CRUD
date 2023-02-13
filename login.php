@@ -13,12 +13,12 @@
     <div class="tela-login">
         <h1>Login</h1>
 
-        <form action="POST">
+        <form action="test-login.php" method="POST">
             <input type="text" name="email" placeholder="Email">
             <br><br>
-            <input type="password" placeholder="Senha">
+            <input type="password" name="senha" placeholder="Senha">
             <br><br>
-            <button>Enviar</button>
+            <input class="input-submit" type="submit" name="submit" value="Enviar">
         </form>
         
     </div>
