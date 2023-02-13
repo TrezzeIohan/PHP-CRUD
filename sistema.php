@@ -63,10 +63,10 @@
         <table class="table text-white table-bg">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <!--<th scope="col">#</th>-->
                     <th scope="col">Nome</th>
-                    <th scope="col">Email</th>
                     <th scope="col">Senha</th>
+                    <th scope="col">Email</th>
                     <th scope="col">Telefone</th>
                     <th scope="col">Sexo</th>
                     <th scope="col">Nascimento</th>

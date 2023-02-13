@@ -26,11 +26,10 @@ if(!empty($_GET['email'])){
     else{
         header('Location: sistema.php');
     }
-
-    //print_r($result);
-
-
     
+}
+else{
+    header('Location: sistema.php');
 }
 ?>
 
@@ -47,7 +46,7 @@ if(!empty($_GET['email'])){
 <body>
     <a href="sistema.php">Voltar</a>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="save-edit.php" method="POST">
             <fieldset>
                 <legend><b>Formulário de Clientes</b></legend>
                 <br>
@@ -111,7 +110,7 @@ if(!empty($_GET['email'])){
                 </div>
                 <br>
 
-                <input type="submit" name="submit" id="submit" value="Enviar">
+                <input type="submit" name="update" id="submit" value="Atualizar dados">
             </fieldset>
         </form>
     </div>
